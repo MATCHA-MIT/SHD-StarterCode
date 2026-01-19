@@ -66,6 +66,18 @@ These lab experiments provide the depth aspect of the course, where students imp
 
 Here's a description of what to expect from each lab in this repository. Our lab content provides both a good deal of depth into what we think are the most important problems for architects to pay attention to, as well as a good deal of breadth to get students exposed to a variety of elements of secure hardware design.
 
+# Lab 0 - C Crash Course
+**Learning Objectives**
+* Get comfortable writing and debugging C as preparation for later labs.
+* Identify and fix common bug classes (bounds bugs, use-after-free/double-free, leaks, uninitialized values, undefined behavior).
+* Learn practical debugging workflows using print debugging, sanitizers (ASAN/UBSAN), and Valgrind.
+
+**Description**
+This lab is a “warmup” crash course designed to assess if students are at a baseline level of C proficiency before the later labs. Students are given a small crackme-style library; the task is to fix the bugs in the library implementation (typically by editing a single C file) until all checks pass. The test suite includes both functional checks and bug checks that catch silent memory-safety issues.
+
+**Setup**
+In the course, we ran this lab on a shared course server with a known environment to make memory-layout-dependent bugs reproducible, but it can also be completed locally using the provided Docker workflow.
+
 # Lab 1 - Website Fingerprinting
 **Learning Objectives**
 * Explore a new kind of side channel from a high level language.
