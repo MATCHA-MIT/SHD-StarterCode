@@ -19,3 +19,6 @@
 [submodule "SHD-FormalVerificationLab"]
 	path = SHD-FormalVerificationLab
 	url = https://github.com/CSAIL-Arch-Sec/SHD-FormalVerificationLab
+[submodule "SHD-CCrashCourseLab"]
+	path = SHD-CCrashCourseLab
+	url = git@github.com:MATCHA-MIT/SHD-CCrashCourseLab.git
